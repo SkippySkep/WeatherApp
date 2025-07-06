@@ -1,0 +1,41 @@
+html {
+    background-color: #CAE9F1;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.weatherContainer {
+    position: relative;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultContainer {
+    position: absolute;
+    top: 100%;
+    left: 50%; /*start at middle of parent weatherContainer*/
+    transform: translateX(-50%); /*shift item back to the center*/
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    margin-top: 5%;
+    border: 1px solid white;
+    border-radius: 16px;
+    background-color: white;
+}
+
