@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="weatherContainer"></div>
-        <h1>Fetch The Weather For ME</h1>
-        <input type="text" id="location" placeholder="e.g. San Francisco">
-        <button onclick="getWeather()">Get Weather</button>
+    <div class="weatherContainer">
+        <h1>Fetch The Weather For Me</h1>
+        <div class="inputRow">
+            <input type="text" id="location" placeholder="e.g. San Francisco">
+            <button onclick="getWeather()">Get Weather</button>
+        </div>
+        <div id="resultContainer"></div>
+    </div>
 </body>
     <script src="API.js"></script>
 </html>
